@@ -49,15 +49,19 @@ Decoding.
    ```bash
    git clone https://github.com/girishsonar88/Steganography.git
 
-   cd Steganography
    mkdir build
    cd build
+   cmake ..
    make
-
-   output exe will be generated at utils
+   ```
+   output StagnoGraphy.exe will be generated at utils
 2. **ENCODING:**
   ./StagnoGraphy.exe -e <image_file> <secret_message_file> <optional_output_image_filename>
-  ./StagnoGraphy.exe -e beautiful.bmp secret.txt stago.bmp(optional)
-3. **DECODING:**
+  ```bash
+  ./StagnoGraphy.exe -e beautiful.bmp secret.txt stago.bmp
+   ```
+4. **DECODING:**
   StagnoGraphy.exe -d <encoded_image_file> <optional_outputfilename>
-  ./StagnoGraphy.exe -d stago.bmp decoded.txt(optional)
+  ```bash
+  ./StagnoGraphy.exe -d stago.bmp decoded.txt
+  ```
